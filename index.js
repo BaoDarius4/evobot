@@ -4,7 +4,7 @@
 const { Client, Collection } = require("discord.js");
 const { readdirSync } = require("fs");
 const { join } = require("path");
-const { TOKEN, PREFIX } = require("./util/Util");
+const { TOKEN, PREFIX } = require("./config.json");
 const i18n = require("./util/i18n");
 
 const client = new Client({
@@ -12,7 +12,7 @@ const client = new Client({
   restTimeOffset: 0
 });
 
-client.login(TOKEN);
+client.login('OTA3NjE0MzYyODgwMDY5Njcy.YYpvvg.wslgObzhzLaew_-4lpmhdOnglF8')
 client.commands = new Collection();
 client.prefix = PREFIX;
 client.queue = new Map();
